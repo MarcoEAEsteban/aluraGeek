@@ -1,0 +1,115 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    margin: auto;
+
+}
+.directorio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(199, 201, 202);
+    height: 115px;
+    padding: 0px 32px;
+}
+.conjunto{
+    display: flex;
+}
+.directorio div{
+    margin: 3px;
+    align-self: center;
+}
+
+.directorio button{
+    width: 200px;
+    height: 40px;
+    align-self: center;
+}
+
+.buscar{
+   
+    padding: 2px;
+    background-color:aliceblue;
+    width: 300px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.buscar input{
+    width: 260px;
+    align-self: center;
+    border: none;
+    background-color: aliceblue;
+}
+.buscar> img{
+    align-self: center;
+    margin-top: 3px;
+}
+.banner{
+    display: flex;
+    align-items: flex-end;
+    align-items: center;
+    background-image: url("fotos_tienda/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1440px;
+    height: 352px;
+    
+}
+.banner div>.consola{
+    margin: 30px;
+}
+.banner div > h1{
+    color: white;
+    font-size: 3em;  
+   
+}
+.banner div > p{
+    color: white;
+    font-size: 1.5em;
+   
+}
+.banner a{
+    background-color: rgb(126, 139, 214);
+    border: 2px solid black;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.secciones{
+    background-color: aquamarine;
+    padding: 50px;
+}
+
+.secciones .titulo{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.container .caja{
+    width: 176px;
+    background-color: aqua;   
+    
+}
+.producto, .productos{
+    margin-top: 6px;
+    text-decoration: none;
+}
