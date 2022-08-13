@@ -3,23 +3,25 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    
+    outline: none;
 }
 
 body{
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    width: 80vw;
     margin: auto;
+    background-color: #E5E5E5;
+
 
 }
 .directorio{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(199, 201, 202);
     height: 115px;
     padding: 0px 100px;
+    background-color: #FFFFFF;
 }
 .conjunto{
     display: flex;
@@ -51,6 +53,7 @@ body{
     align-self: center;
     border: none;
     background-color: aliceblue;
+    padding-left: 10px;
    
 }
 .buscar> img{
@@ -64,7 +67,6 @@ body{
     background-image: url("fotos_tienda/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1440px;
     height: 352px;
     
     
@@ -83,39 +85,44 @@ body{
    
 }
 .banner a{
-    background-color: rgb(126, 139, 214);
-    border: 2px solid black;
+    background-color: #2A7AE4;
     color: white;
     text-decoration: none;
     padding: 10px;
 }
 
 .secciones{
-    background-color: aquamarine;
+    background-color: #FFFFFF;
     padding: 10px 100px;
+    
 }
 
 .secciones .titulo{
-    
+    color: #464646;
     display: flex;
     justify-content: space-between;
+ 
     margin-bottom: 10px;
     margin-top: 50px;
+    font-size: 32px;
 }
 .titulo >a{
     text-decoration: none;
+    color: #2A7AE4;
+    font-size: 16px;
 }
 
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     
 }
 
 .container .caja{
     width: 176px;
-    background-color: aqua;   
+     
     
 }
 .producto, .productos{
@@ -124,9 +131,87 @@ body{
 }
 
 .publico{
-   w 
+    background-color: #EAF2FD;
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    padding: 0px 100px;
+    height: 318px;
+    justify-content: space-between;
+    padding-top: 50px;
 }
 
 .nosotros{
+    color: #464646;
+    display: flex;
     flex-direction: column;
+    width: 40vw;
+    font-size: 16px; 
+    padding-top: 0.2em;
+     
+}
+.nosotros>a{
+    text-decoration: none;
+    margin-left: 50px;
+    line-height: 3em;
+    
+}
+.marca{
+    
+    width: 200px;
+    text-align: center;
+    padding-top: 0.2em;
+}
+.formulario{
+    flex-direction: column;
+
+}
+.nombre{
+    
+    height: 50px;
+    margin-top: 15px;
+    border:#2A7AE4;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.199);
+    padding-left: 10px;
+}
+
+.texto{
+    
+    height: 100px;
+    margin-top: 15px;
+    outline: none;
+    resize: none;
+    border:#2A7AE4;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.185);
+    padding: 10px;
+
+}
+.boton{
+    background-color: #2A7AE4;
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    border: #4188e62c;
+    font-size: 16px;
+}
+::placeholder{
+    padding: 20px;
+    opacity: 50%;
+    font-size: 16px;
+    
+    
+    
+}
+
+.pie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FFFFFF;
+    height: 102px;
+    color: #464646;
+}
+
+.desarrollado{
+    text-align: center;
 }
