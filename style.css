@@ -132,15 +132,25 @@ body{
 
 .publico{
     background-color: #EAF2FD;
-    display: grid;
-    grid-template-columns: auto auto auto; 
+    display: flex;
     padding: 0px 100px;
-    height: 318px;
     justify-content: space-between;
     padding-top: 50px;
 }
 
 .nosotros{
+   
+    color: #464646;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    font-size: 16px; 
+    padding-top: 0.2em;
+    margin: 15px;
+     
+}
+.nosotros1{
+   
     color: #464646;
     display: flex;
     flex-direction: column;
@@ -150,39 +160,40 @@ body{
      
 }
 .nosotros>a{
+   
     text-decoration: none;
-    margin-left: 50px;
+    
     line-height: 3em;
     
 }
 .marca{
     
-    width: 200px;
+    width: 25vw;
     text-align: center;
     padding-top: 0.2em;
 }
 .formulario{
     flex-direction: column;
-
 }
 .nombre{
-    
+    width: 37vw;
     height: 50px;
     margin-top: 15px;
     border:#2A7AE4;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.199);
-    padding-left: 10px;
+    padding-left: 16px;
 }
 
 .texto{
-    
+    width: 37vw;
     height: 100px;
     margin-top: 15px;
     outline: none;
     resize: none;
     border:#2A7AE4;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.185);
-    padding: 10px;
+    padding: 8px;
+
 
 }
 .boton{
@@ -214,4 +225,44 @@ body{
 
 .desarrollado{
     text-align: center;
+}
+@media screen and (max-width:390px) {
+    body{
+        width: 100vw;
+        font-size: 12px;
+    }
+    .directorio{
+        padding: 0px;
+    
+    }
+    .directorio div{
+        margin: 1PX;
+    }
+    .conjunto div >img{
+        width: 30px;
+    }
+    .buscar{
+        width: 210px;
+        height: 60px;
+        margin: 2px;
+    }
+    .buscar input{
+        width: 170px;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .directorio button{
+        width: 50px;
+    }
+
+    .banner{
+        height: auto;
+        padding-bottom: 22px;
+    }
+    .banner div>.consola{
+        margin: 10px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
 }
