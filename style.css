@@ -19,12 +19,15 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
     height: 115px;
     padding: 0px 100px;
     background-color: #FFFFFF;
 }
 .conjunto{
     display: flex;
+    width: 100vw;
+    justify-content: space-between;
 }
 .directorio div{
     margin: 3px;
@@ -226,34 +229,46 @@ body{
 .desarrollado{
     text-align: center;
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:1125px) {
     body{
         width: 100vw;
         font-size: 12px;
     }
     .directorio{
-        padding: 0px;
+        padding: 0px 20px;
+        justify-content: center;
     
+    }
+    .conjunto{
+        justify-content: space-between;
     }
     .directorio div{
         margin: 1PX;
+    
     }
     .conjunto div >img{
         width: 30px;
     }
     .buscar{
-        width: 210px;
-        height: 60px;
-        margin: 2px;
+        text-align: center;
+        width: 60px;
+       background-color: transparent;
+       border: none;
     }
+    .buscar::placeholder{
+        padding: 0px;
+        opacity: 0%;
+        font-size: 0px;
+    }
+
     .buscar input{
-        width: 170px;
+        width: 0px;
         padding: 0px;
         margin: 0px;
     }
     
     .directorio button{
-        width: 50px;
+        width: 130px;
     }
 
     .banner{
@@ -264,5 +279,43 @@ body{
         margin: 10px;
         margin-top: 25px;
         margin-bottom: 10px;
+    }
+
+    .secciones{
+        padding: 10px 10px;
+    }
+
+    .container{
+        justify-content: left;
+        justify-content: space-between;
+    }
+    .caja{
+        width: 100px;
+        text-align: center;
+    }
+    .container .caja{
+        width: 100px;
+    }
+    .productos{
+        width: 100px;
+    }
+    .publico{
+        flex-direction: column;
+        padding: 50px 10px;
+        align-items: center;
+    }
+    .marca{
+        width: 50vw;
+    }
+    .nosotros{
+        width: 80vw;
+        text-align: center;
+    }
+    .nosotros1{
+        width: 90vw;
+        text-align: center;
+    }
+    .nombre , .texto{
+        width: 89vw;
     }
 }
